@@ -42,3 +42,18 @@
     background-color: rgb(3, 82, 82);
 }
 
+
+@media screen and (max-width:576px) {
+    .cart{
+        width: 350px;
+        margin: auto;
+        padding: 0;
+    }
+
+    .cart img{
+        width: 95%;
+        height: 286px;
+        border-radius: 8px;
+        margin: 7px;
+    }
+}

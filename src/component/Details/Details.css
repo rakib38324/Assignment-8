@@ -97,3 +97,15 @@
     color: white;
     background-color: rgb(37, 82, 67);
 }
+
+
+@media screen and (max-width:576px) {
+    .detailes-Container{
+        margin: auto;
+        width: 350px;
+    }
+    .profile{
+        display: flex;
+        flex-direction: column;
+    }
+}

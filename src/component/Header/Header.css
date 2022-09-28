@@ -13,3 +13,15 @@
     padding-left: 30px;
 }
 
+@media screen and (max-width:576px) {
+    .navbar{
+        display: flex;
+        width: 310px;
+        background-color: rgb(232, 243, 243);
+    }
+
+    .navbar h1{
+        padding: 0px;
+        font-size: 20px;
+    }
+}

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Questions = () => {
     return (
-        <div>
+        <div className='question'>
             <div>
                 <h1>How does React Work?</h1>
                 <p>React creates a VIRTUAL DOM in memory.
@@ -24,7 +24,7 @@ const Questions = () => {
                 <h1>What is the use of Useeffect without data load?</h1>
                 <p>Earlier, we looked at how to express side effects that don’t require any cleanup. However, some effects do. For example, we might want to set up a subscription to some external data source. In that case, it is important to clean up so that we don’t introduce a memory leak! Let’s compare how we can do it with classes and with Hooks.
 
-</p>
+                </p>
             </div>
         </div>
     );

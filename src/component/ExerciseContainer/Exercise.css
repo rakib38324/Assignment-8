@@ -17,11 +17,23 @@
     margin-left: 100px;
 }
 
-.details-Container{
-    position: absolute;
-    right: 0;
-}
+
 
 .Question-Container{
     padding: 100px;
+}
+
+@media screen and (max-width:576px) {
+    .Exercise-Container{
+        width: 350px;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .cart-Container{
+        width: 350px;
+        padding: auto;
+        margin: auto;
+        grid-template-columns: repeat(1,1fr);
+    }
+    
 }
