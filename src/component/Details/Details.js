@@ -48,8 +48,23 @@ const Details = (props) => {
                 <button>50s</button>
             </div>
 
+            <h1 className='Exercise-Details'>Exercise Details</h1>
+
+            <div className='exercise-time-break-time healt-info'>
+                <h1>Exercise time </h1>
+                <h2>200 <span className='unit-style'>seconds</span></h2>
+            </div>
+
+            <div className='exercise-time-break-time healt-info'>
+                <h1>Break time </h1>
+                <h2>200 <span className='unit-style'>seconds</span></h2>
+            </div>
+
             <p>length:{props.details.length}</p>
+
+            <button className='Activity-btn'>Activity Completed</button>
         </div>
+
     );
 };
 
