@@ -78,7 +78,7 @@ const Details = (props) => {
 
         
 
-            <button  className='Activity-btn'>Activity Completed</button>
+            <button onClick={()=>{props.click()}} className='Activity-btn'>Activity Completed</button>
             
         </div>
 

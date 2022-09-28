@@ -35,16 +35,17 @@ const ExerciseContainer = () => {
     }
 
   
-
-    // <button onclick="myFunction()">Show Snackbar</button>
-
-            
-    //         <div id="snackbar">Some text some message..</div>
+    function myFunction() {
+        var x = document.getElementById("snackbar");
+        x.className = "show";
+        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+      }
 
 
     return (
 
         <div className='main'>
+            <div id="snackbar">Congratulation !!! You Complete The Mission</div>
             <div className='Exercise-Container'>
 
                 <div>
@@ -70,7 +71,8 @@ const ExerciseContainer = () => {
                 <div className='details-Container'>
                     <Details details={details}
                         breaktime={addbreaktimes}
-                    // breakingtime = {breaktime}
+                    
+                        click = {myFunction}
                    
                     ></Details>
                 </div>
