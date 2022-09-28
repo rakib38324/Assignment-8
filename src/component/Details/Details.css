@@ -57,6 +57,11 @@
     border-radius: 20%;
 }
 
+.healt-info button:hover{
+    color: white;
+    background-color: rgb(37, 82, 82);
+}
+
 .Exercise-Details{
     margin-top: 100px;
 }
@@ -86,4 +91,9 @@
     border: none;
     padding: 10px;
     background-color: aquamarine;
+}
+
+.Activity-btn:hover{
+    color: white;
+    background-color: rgb(37, 82, 67);
 }
