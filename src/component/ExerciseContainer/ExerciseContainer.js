@@ -6,6 +6,7 @@ import './Exercise.css'
 const ExerciseContainer = () => {
 
     const [equpments, setequpment] = useState([])
+    const [details, setdetails] = useState([])
 
 
     useEffect( ()=>{
@@ -13,6 +14,13 @@ const ExerciseContainer = () => {
         .then(res => res.json())
         .then(data => setequpment(data))
     } , [])
+
+
+    const adddetails= (equpment) =>  {
+        // console.log(equpment);
+        const newCart = [...details, equpment];
+        setdetails(newCart);
+    }
 
     
     return (
@@ -26,7 +34,11 @@ const ExerciseContainer = () => {
                 {
                     equpments.map(equpment =>  <Cart 
                         key={equpment.id}
-                        eqp = {equpment}></Cart>
+                        eqp = {equpment}
+                        handeldetails = {adddetails}
+                        
+                        >
+                        </Cart>
                     )
                 }
                 </div>
@@ -34,7 +46,7 @@ const ExerciseContainer = () => {
 
 
             <div>
-                <Details></Details>
+                <Details details={details}></Details>
             </div>
 
         </div>
