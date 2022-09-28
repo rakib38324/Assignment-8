@@ -20,18 +20,32 @@ const Details = (props) => {
             </div>
 
 
-            <div>
-                <div>
-
+            <div className='healt-info'>
+                <div className='helth-unit-info'>
+                    <h1>59<small className='unit-style'>Kg</small></h1>
+                    <p className='unit-style'>Weight</p>
                 </div>
 
-                <div>
-
+                <div className='helth-unit-info'>
+                    <h1>5.4</h1>
+                    <p className='unit-style'>Hight</p>
                 </div>
-
-                <div>
                     
+                <div className='helth-unit-info'>
+                    <h1>25<small className='unit-style'>yrs</small></h1>
+                    <p className='unit-style'>Age</p>
                 </div>
+
+            </div>
+
+            <h1>Add A Break</h1>
+
+            <div className='healt-info'>
+                <button>10s</button>
+                <button>20s</button>
+                <button>30s</button>
+                <button>40s</button>
+                <button>50s</button>
             </div>
 
             <p>length:{props.details.length}</p>
