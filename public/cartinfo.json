@@ -1,0 +1,34 @@
+[
+    {
+        "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
+        "name": "Dumble",
+        "details": "Dumbbells are the most accessible free weights so they’re the first most people tend to try, either in the gym or as part of a home workout.",
+        "age":"20-25",
+        "img": "https://post.healthline.com/wp-content/uploads/2020/04/458490-These-Are-the-12-Best-Dumbbells-to-Use-At-Home-According-to-A-Trainer_732x549-thumbnail.jpg",
+        "time" : "50s"
+    },
+    {
+        "id": "13cbc7ed-a61b-4883-9d42-82d7d8642b86",
+        "name": "Chest Press Machine",
+        "details": "The chest press machine is an excellent exercise for beginners. It provides an effective but straightforward way to work your upper body.",
+        "age":"20-30",
+        "img": "https://i0.wp.com/post.healthline.com/wp-content/uploads/2019/07/Male_Chest_Press_1296x728-header-1296x728.jpg?w=1155&h=1528",
+        "time" : "40s"
+    },
+    {
+        "id": "307f166f-1d04-4573-bc37-2f461ea9d4f7",
+        "name": "Hammer Strength Machine",
+        "details": "Hammer Strength machines provide a great workout for all of your muscles, helping to improve their tone and appearance.",
+        "age":"20-28",
+        "img": "http://www.coretrainingtips.com/wp-content/uploads/2022/03/hammer-strength-machine1.jpg",
+        "time" : "120s"
+    },
+    {
+        "id": "4bf9798f-63bc-4a83-b0c6-6a3b816fe922",
+        "name": "Hip Abduction Machine",
+        "details": "This hip abduction machine consists of two pads that rest on your outer thighs as you sit in the machine.",
+        "age":"20-26",
+        "img": "https://i.ytimg.com/vi/7pbZA7ncuq8/maxresdefault.jpg",
+        "time" : "100s"
+    }
+]
