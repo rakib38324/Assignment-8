@@ -7,6 +7,7 @@ const ExerciseContainer = () => {
 
     const [equpments, setequpment] = useState([])
     const [details, setdetails] = useState([])
+    const [breaktime, setbreaktime] = useState([])
 
 
     useEffect( ()=>{
@@ -20,6 +21,11 @@ const ExerciseContainer = () => {
         // console.log(equpment);
         const newCart = [...details, equpment];
         setdetails(newCart);
+    }
+
+
+    const addbreaktimes = (time) =>{
+        setbreaktime(time);
     }
 
     
@@ -46,7 +52,9 @@ const ExerciseContainer = () => {
 
 
             <div>
-                <Details details={details}></Details>
+                <Details details={details}
+                breaktime = {addbreaktimes}
+                breakingtime = {breaktime}></Details>
             </div>
 
         </div>

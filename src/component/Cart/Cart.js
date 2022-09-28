@@ -4,7 +4,7 @@ import './Cart.css'
 const Cart = (props) => {
 
     const {name, img,time,age,details } = props.eqp;
-    console.log(props.eqp)
+    // console.log(props.eqp)
 
     
     return (

@@ -5,6 +5,20 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Details = (props) => {
+
+    
+    
+    // console.log(breaktime);
+    let time = 0;
+    let breaktime = 0; 
+
+    for(let info of props.details){
+        time = time + info.time;
+    }
+
+    breaktime = props.breakingtime;
+    
+    
     return (
         <div className='detailes-Container'>
 
@@ -41,23 +55,23 @@ const Details = (props) => {
             <h1>Add A Break</h1>
 
             <div className='healt-info'>
-                <button>10s</button>
-                <button>20s</button>
-                <button>30s</button>
-                <button>40s</button>
-                <button>50s</button>
+                <button onClick={()=>{props.breaktime(10)}}>10s</button>
+                <button onClick={()=>{props.breaktime(20)}}>20s</button>
+                <button onClick={()=>{props.breaktime(30)}}>30s</button>
+                <button onClick={()=>{props.breaktime(40)}}>40s</button>
+                <button onClick={()=>{props.breaktime(50)}}>50s</button>
             </div>
 
             <h1 className='Exercise-Details'>Exercise Details</h1>
 
             <div className='exercise-time-break-time healt-info'>
                 <h1>Exercise time </h1>
-                <h2>200 <span className='unit-style'>seconds</span></h2>
+                <h2>{time} <span className='unit-style'>seconds</span></h2>
             </div>
 
             <div className='exercise-time-break-time healt-info'>
                 <h1>Break time </h1>
-                <h2>200 <span className='unit-style'>seconds</span></h2>
+                <h2>{breaktime} <span className='unit-style'>seconds</span></h2>
             </div>
 
             <p>length:{props.details.length}</p>
