@@ -34,6 +34,13 @@ const ExerciseContainer = () => {
         Details(time)
     }
 
+  
+
+    // <button onclick="myFunction()">Show Snackbar</button>
+
+            
+    //         <div id="snackbar">Some text some message..</div>
+
 
     return (
 
@@ -49,7 +56,7 @@ const ExerciseContainer = () => {
                                 key={equpment.id}
                                 eqp={equpment}
                                 handeldetails={adddetails}
-
+                                
                             >
                             </Cart>
                             )
@@ -64,6 +71,7 @@ const ExerciseContainer = () => {
                     <Details details={details}
                         breaktime={addbreaktimes}
                     // breakingtime = {breaktime}
+                   
                     ></Details>
                 </div>
 

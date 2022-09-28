@@ -4,7 +4,7 @@
         "name": "Dumble",
         "details": "Dumbbells are the most accessible free weights so they’re the first most people tend to try, either in the gym or as part of a home workout.",
         "age":"20-25",
-        "img": "https://post.healthline.com/wp-content/uploads/2020/04/458490-These-Are-the-12-Best-Dumbbells-to-Use-At-Home-According-to-A-Trainer_732x549-thumbnail.jpg",
+        "img": "https://m.media-amazon.com/images/I/41310LQQLgL._SX450_.jpg",
         "time" : 25
     },
     {
@@ -24,11 +24,29 @@
         "time" : 120
     },
     {
-        "id": "4bf9798f-63bc-4a83-b0c6-6a3b816fe922",
-        "name": "Hip Abduction Machine",
-        "details": "This hip abduction machine consists of two pads that rest on your outer thighs as you sit in the machine.",
+        "id": "6602468a-a3a8-4c2c-9d3a-fd54e2c5daf7",
+        "name": "Pec Fly Machine",
+        "details": "The chest fly machine is often overlooked in the weight room because there are so many different ways to work the chest (pectoralis) muscles.",
+        "age":"18-30",
+        "img": "https://www.intowellness.in/wp-content/uploads/2019/12/Pec-Fly-Machine.jpg",
+        "time" : 20
+    },
+    {
+        "id": "5db3ee2f-2eb7-4764-942d-894f72198e86",
+        "name": "abdominal roller",
+        "details": "The ab roller is an excellent exercise for working the upper body musculature too, including the erector spinae, the stabilizing muscles running the length of your spine",
         "age":"20-26",
-        "img": "https://i.ytimg.com/vi/7pbZA7ncuq8/maxresdefault.jpg",
-        "time" : 100
+        "img": "https://hips.hearstapps.com/hmg-prod/images/man-work-out-with-ab-roller-royalty-free-image-1580143477.jpg",
+        "time" : 180
+    },
+    
+    {
+        "id": "5db3ee2f-2eb7-4764-942d-894f72198e86",
+        "name": "weightlifting",
+        "details": "Strength training can help you manage or lose weight, and it can increase your metabolism to help you burn more calories.",
+        "age":"20296",
+        "img": "https://img.olympicchannel.com/images/image/private/t_16-9_640/f_auto/v1538355600/primary/w6pgn183qrqgfwgzwxkk",
+        "time" : 80
     }
+    
 ]

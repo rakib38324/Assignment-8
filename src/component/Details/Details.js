@@ -6,32 +6,32 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Details = (props) => {
 
-    
-    
+
+
     // console.log(breaktime);
     let time = 0;
-    let breaktime = 0; 
+    let breaktime = 0;
 
-    for(let info of props.details){
+    for (let info of props.details) {
         time = time + info.time;
     }
 
-    
+
     const timefromLocalstorage = localStorage.getItem("Breaking-Time")
     breaktime = timefromLocalstorage;
-    
-    
+
+
     return (
         <div className='detailes-Container'>
 
             <div className='profile'>
                 <img src={img} alt="" />
                 <div className='name-location'>
-                <h1 className='name-title'>MD. Aminul Islam Rakib</h1>
-                <div className='location'>
-                    <p><FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon></p>
-                    <p>Savar,Dhaka</p>
-                </div>
+                    <h1 className='name-title'>MD. Aminul Islam Rakib</h1>
+                    <div className='location'>
+                        <p><FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon></p>
+                        <p>Savar,Dhaka</p>
+                    </div>
                 </div>
             </div>
 
@@ -46,7 +46,7 @@ const Details = (props) => {
                     <h1>5.4</h1>
                     <p className='unit-style'>Hight</p>
                 </div>
-                    
+
                 <div className='helth-unit-info'>
                     <h1>25<small className='unit-style'>yrs</small></h1>
                     <p className='unit-style'>Age</p>
@@ -57,11 +57,11 @@ const Details = (props) => {
             <h1>Add A Break</h1>
 
             <div className='healt-info'>
-                <button onClick={()=>{props.breaktime(10)}}>10s</button>
-                <button onClick={()=>{props.breaktime(20)}}>20s</button>
-                <button onClick={()=>{props.breaktime(30)}}>30s</button>
-                <button onClick={()=>{props.breaktime(40)}}>40s</button>
-                <button onClick={()=>{props.breaktime(50)}}>50s</button>
+                <button onClick={() => { props.breaktime(10) }}>10s</button>
+                <button onClick={() => { props.breaktime(20) }}>20s</button>
+                <button onClick={() => { props.breaktime(30) }}>30s</button>
+                <button onClick={() => { props.breaktime(40) }}>40s</button>
+                <button onClick={() => { props.breaktime(50) }}>50s</button>
             </div>
 
             <h1 className='Exercise-Details'>Exercise Details</h1>
@@ -76,9 +76,10 @@ const Details = (props) => {
                 <h2>{breaktime} <span className='unit-style'>seconds</span></h2>
             </div>
 
-            <p>length:{props.details.length}</p>
+        
 
-            <button className='Activity-btn'>Activity Completed</button>
+            <button  className='Activity-btn'>Activity Completed</button>
+            
         </div>
 
     );
