@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
-import Details from '../Details/Details';
+import Details, { addToDb } from '../Details/Details';
 import './Exercise.css'
 
 const ExerciseContainer = () => {
@@ -21,11 +21,16 @@ const ExerciseContainer = () => {
         // console.log(equpment);
         const newCart = [...details, equpment];
         setdetails(newCart);
+        
     }
 
 
     const addbreaktimes = (time) =>{
-        setbreaktime(time);
+        // setbreaktime(time);
+        localStorage.setItem('Breaking-Time', time);
+        let times = localStorage.getItem("Breaking-Time")
+        setbreaktime(times)
+        Details(time)
     }
 
     
@@ -54,7 +59,8 @@ const ExerciseContainer = () => {
             <div>
                 <Details details={details}
                 breaktime = {addbreaktimes}
-                breakingtime = {breaktime}></Details>
+                // breakingtime = {breaktime}
+                ></Details>
             </div>
 
         </div>

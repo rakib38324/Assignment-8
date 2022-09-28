@@ -16,7 +16,9 @@ const Details = (props) => {
         time = time + info.time;
     }
 
-    breaktime = props.breakingtime;
+    
+    const timefromLocalstorage = localStorage.getItem("Breaking-Time")
+    breaktime = timefromLocalstorage;
     
     
     return (
